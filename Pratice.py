@@ -14,6 +14,10 @@ arr2 = np.random.randint(1,100, size = (3,2)) #2d array
 
 array = np.array([1,2,3,4,5])
 print(np.random.choice(array, 5)) #it will print 5 size random array  but the number are choise from array [1,2,3,4,5]
+
+#universal function like add multi sin cos log
+
+print(np.add(array,5)) #add function
 # print(array)
 # print(arr)
 # print(arr2)
