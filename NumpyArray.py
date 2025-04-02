@@ -26,3 +26,5 @@ print(array_1[-1]) #print last value mean reverse
 mark = array_1 > 2  
 print(array_1[mark]) #boolean indx greater than 2 value in array printed 
 
+print (array_2[0][-1]) #print first row last value
+
