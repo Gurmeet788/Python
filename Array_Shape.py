@@ -7,5 +7,5 @@ Array_3d = np.array([[[1,2,3,4],[1,2,3,4],[1,2,3,4]]])
 print(Array_1d.shape)
 print(Array_2d.shape) # shape function tell about the shape of array like how many row and cloume are in and the dimenmision of array
 
-Arr = np.array([1,5,7],ndmin=5) #ndmin function make the dimention
+Arr = np.array([1,5,7,4],ndmin=2) #ndmin function make the dimenstion like 1 int n number of deminsion
 print(Arr.shape)
