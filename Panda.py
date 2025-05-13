@@ -37,3 +37,13 @@ print(datafram.dtypes) #tell us datatype of every colum
 print(datafram[0]) # it will print whole colum 1 mean series
 print(type(datafram[0]))
 #mean multiple series = dataFram
+
+datafram2 = datafram #it is not copy we are just changeing the name , only view
+datafram2[0][0] = 17 #it will change the changeing into datafram same we are just make two pointer 
+print(datafram) 
+
+datafram3 = datafram.copy() # this will make copy of datafram the pointer refrence variable name is datafram 3
+
+datafram3[0][0] = "dsa"
+print(datafram) #it will not change in datafram, datafram3 is seprate table copy of datafram at memory it have their own memory
+print(datafram3)
