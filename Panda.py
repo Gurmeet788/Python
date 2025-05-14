@@ -47,3 +47,22 @@ datafram3 = datafram.copy() # this will make copy of datafram the pointer refren
 datafram3[0][0] = "dsa"
 print(datafram) #it will not change in datafram, datafram3 is seprate table copy of datafram at memory it have their own memory
 print(datafram3)
+
+#if we cahnge something like right datafram3[0][0] = "dsa" than interpreter gives warning b/c it is confused what we have to give or change into in the view or in orginal 
+
+#that why we use loc function for changeing
+
+datafram.loc[0,1] = "hello"
+print(datafram)
+
+datafram.columns = list("ABCDEFG") # it will cahnge the row indx into alphbat
+print(datafram.head(2))
+
+datafram = datafram.drop(0, axis=0) #if we write inplace after axis it will drop in orginally we donot need to write datafram = ;
+print(datafram.head(2))
+
+print(datafram.iloc[[1,2],[1,2]]) #iloc function work on indx wise if the colum name is alpbhat wise or any other or row name are changed sitll it will work on it will count number wise
+
+#if we drop any row or colum the sequnce series is change to set it we use 
+datafram.reset_index(drop = True, inplace = True)
+print(datafram.head(5))
